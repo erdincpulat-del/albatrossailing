@@ -1,0 +1,34 @@
+# Query: supabaseserver
+# ContextLines: 1
+
+8 results - 2 files
+
+app/app:admin:actions.ts:
+    3  import { cookies } from "next/headers";
+    4: import { supabaseServer } from "@/lib/supabaseServer";
+    5  
+
+   37    requireAdmin();
+   38:   const supabase = supabaseServer();
+   39  
+
+   61    requireAdmin();
+   62:   const supabase = supabaseServer();
+   63  
+
+   92    requireAdmin();
+   93:   const supabase = supabaseServer();
+   94  
+
+  105    requireAdmin();
+  106:   const supabase = supabaseServer();
+  107  
+
+  118    requireAdmin();
+  119:   const supabase = supabaseServer();
+  120  
+
+lib/supabaseServer.ts:
+  2  
+  3: export function supabaseServer() {
+  4    const url = process.env.NEXT_PUBLIC_SUPABASE_URL!;
