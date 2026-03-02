@@ -2,15 +2,11 @@
 
 import { useEffect, useState } from "react";
 import {
-  adminLogin,
-  adminLogout,
-  deleteLicense,
-  generateCodeAndShort,
-  listLicenses,
   setStatus,
   upsertLicense,
-} from "./actions";
-
+  deleteLicense,
+  generateCodeAndShort
+} from "@/app/admin/actions";
 type Row = {
   id: string;
   code: string;
